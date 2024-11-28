@@ -1,0 +1,85 @@
+
+/* Variable claiming */
+:root {
+    --primary: #1949ce;
+    --secondary: #96aef1;
+    --grey: #aba7a7;
+    --white: #fff;
+
+    --xs: 4px;
+    --s: 8px;
+    --m: 16px;
+    --l: 32px;
+}
+
+Body {
+    font-family: 'open Sans', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+/* Basic reusable variables ------------------ */
+.u-textCenter {
+    text-align: center;
+}
+
+.u-flex {
+    display: flex;
+}
+
+
+/* <uniquifier>: Use a unique and descriptive class name */
+/* font weight: Use a value from 300 to 800 */
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "width" 100;
+}
+
+
+.navTitle {
+    color: var(--white);
+    font-size: 20px;
+    padding: var(--s);
+    font-weight: normal;
+}
+
+.navContainer {
+    background-color: var(--primary);
+}
+
+/* image with html -----*/ /* the div size is image size */
+#corgi {
+    /* border-radius: var(--s); */
+    border-radius: 50%;
+}
+
+/* image url in css ----*/ /* Better for customizing div shape and size */
+#corgi-img {
+    /* Responsive design */
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+
+    /* dive height to be the same as width */
+    padding-top: 100%;
+
+    /* Make it a circle */
+    border-radius: 50%;
+    background-image: url("corgi.jpg");
+
+    /* Smaller dimension to fill */
+    background-size:cover;
+
+    margin: 2 auto;
+}
+
+.subContainer{
+    flex-grow: 2;
+}
+
